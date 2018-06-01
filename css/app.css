@@ -109,6 +109,12 @@ h1 {
     display: inline-block;
 }
 
+.score-panel .timer {
+    width: 30%;
+    text-align: center;
+    margin: 0 5px 0 5px;
+    display: inline-block;
+}
 .score-panel .restart {
     float: right;
     cursor: pointer;
@@ -116,8 +122,8 @@ h1 {
 
 .winner {
     text-align: center;
-    width: 450px;
-    margin: 20vh;
+    width: 500px;
+    margin: 15vh;
     padding: 30px;
     border: 3px solid black;
     border-radius: 20%;
@@ -129,12 +135,33 @@ h1 {
 }
 
 .winner p {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 #replay {
+    background-color: lemonchiffon; /* Green */
+    border: none;
+    border-radius: 20%;
+    color: purple;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#replay:hover {
+    transform: translate(1px, 1px);
+    background-color: burlywood;
+    color: darkmagenta;
+}
+
+/* #replay {
     color: purple;
     background: lightgoldenrodyellow;
+} */
+
+.rotate {
+    transform: rotate(360deg);
+    transition: all 0.4s linear;
 }
 
 /* @keyframes shake sequence was from https://www.w3schools.com/howto/howto_css_shake_image.asp */
